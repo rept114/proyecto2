@@ -1,0 +1,77 @@
+body {
+    background-color: #ebeeff;
+}
+
+#titulonavbar {
+    color: #ebeeff;
+}
+
+.nav-link {
+    color: #ebeeff;
+}
+
+.d-flex {
+    width: 450px;
+}
+
+#img1 {
+    width: 40px!important;
+    height: 40px!important;
+    border-radius: 20px!important;
+}
+
+.container {
+    width: 1280px;
+    height: 480px;
+    background-color: #23242d00;
+    border-radius: 20px;
+}
+
+.panel {
+    width: 730px;
+    height: 538px;
+    background-color: #48569E;
+    margin-top: -360px;
+    border-radius: 20px;
+    margin-left: 250px;
+}
+
+label {
+    color: #ebeeff;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+textarea {
+    margin-left: 150px;
+    border-radius: 15px!important;
+}
+
+input {
+    margin-left: 150px;
+    border-radius: 15px!important;
+}
+
+select {
+    margin-left: 150px;
+}
+
+.botoncrear {
+    margin-top: -20px;
+    margin-left: 80px;
+}
+
+#botoncrear {
+    width: 200px!important;
+    background-color: #5F6FC5!important;
+    border-color:  #5F6FC5!important;
+}
+
+.linea {
+    width: 3px;
+    height: 490px;
+    background-color: #ebeeff;
+    margin-top: -490px;
+    margin-left: 40px;
+    border-radius: 40px;
+}
