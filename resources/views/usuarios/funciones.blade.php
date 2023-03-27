@@ -18,10 +18,10 @@
                       <button class="nav-link" onclick="window.location.href='/usuarios'" id="inicio" data-bs-toggle="tab" data-bs-target="#inicio-tab-pane" type="button" role="tab" aria-controls="inicio-tab-pane" aria-selected="true">Inicio</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" onclick="window.location.href='/usuarios/funciones'" id="funcion" data-bs-toggle="tab" data-bs-target="#funcion-tab-pane" type="button" role="tab" aria-controls="#funcion-tab-pane" aria-selected="false">Funciones</button>
+                      <button class="nav-link active" onclick="window.location.href='/usuarios/funciones'" id="funcion" data-bs-toggle="tab" data-bs-target="#funcion-tab-pane" type="button" role="tab" aria-controls="#funcion-tab-pane" aria-selected="false">Funciones</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" onclick="window.location.href='/usuarios/peliculas'" id="registro" data-bs-toggle="tab" data-bs-target="#registro-tab-pane" type="button" role="tab" aria-controls="registro-tab-pane" aria-selected="false">Registro</button>
+                      <button class="nav-link" onclick="window.location.href='/usuarios/peliculas'" id="registro" data-bs-toggle="tab" data-bs-target="#registro-tab-pane" type="button" role="tab" aria-controls="registro-tab-pane" aria-selected="false">Registro</button>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -42,25 +42,14 @@
             @csrf
             <div class="row">
                 <div class="col-7">
-                    <label class="form-label" for="titulo"><strong>Titulo:</strong></label>
-                    <input type="text" class="form-control" placeholder="Titanic" name="titulo" id="titulo">
+                    <label class="form-label" for="titulo"><strong>Fecha:</strong></label>
+                    <input type="date" class="form-control" placeholder="Titanic" name="titulo" id="titulo">
                 </div>
             </div>
             <div class="row">
                 <div class="col-7">
-                    <label class="form-label" for="duracion_minutos"><strong>Duración en minutos:</strong></label>
-                    <input type="number" class="form-control" placeholder="155" name="duracion_minutos" id="duracion_minutos">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-7">
-                    <label class="form-label" for="genero"><strong>Género:</strong></label>
-                    <select class="form-select" name="genero">
-                        <option value="" selected disabled>Elige el género</option>
-                        @foreach($generos as $genero)
-                            <option value="{{ $genero->id }}">{{ $genero->nombre }}</option>
-                        @endforeach
-                    </select>
+                    <label class="form-label" for="duracion_minutos"><strong>Hora:</strong></label>
+                    <input type="time" class="form-control" placeholder="155" name="duracion_minutos" id="duracion_minutos">
                 </div>
             </div>
             <div class="row">
@@ -87,7 +76,7 @@
                 </div>
                 <div class="row">
                 <div class="col-7">
-                    <label class="form-label" for="director"><strong>Director:</strong></label>
+                    <label class="form-label" for="director"><strong>Pelicula:</strong></label>
                     <input type="text" class="form-control" placeholder="Steven Spilber" id="director" name="director">
                 </div>
             </div>

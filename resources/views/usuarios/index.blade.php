@@ -17,7 +17,7 @@
                       <button class="nav-link active" onclick="window.location.href='/usuarios'" id="inicio" data-bs-toggle="tab" data-bs-target="#inicio-tab-pane" type="button" role="tab" aria-controls="inicio-tab-pane" aria-selected="true">Inicio</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="genero" data-bs-toggle="tab" data-bs-target="#genero-tab-pane" type="button" role="tab" aria-controls="genero-tab-pane" aria-selected="false">Género</button>
+                      <button class="nav-link" onclick="window.location.href='/usuarios/funciones'" id="funcion" data-bs-toggle="tab" data-bs-target="#funcion-tab-pane" type="button" role="tab" aria-controls="funcion-tab-pane" aria-selected="false">Funciones</button>
                     </li>
                     <li class="nav-item" role="presentation">
                       <button class="nav-link" onclick="window.location.href='/usuarios/peliculas'" id="registro" data-bs-toggle="tab" data-bs-target="#registro-tab-pane" type="button" role="tab" aria-controls="registro-tab-pane" aria-selected="false">Registro</button>

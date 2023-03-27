@@ -25,5 +25,10 @@ Route::get('/usuarios', [IndexController::class, 'index'])
 Route::get('/usuarios/peliculas', [IndexController::class, 'peliculas'])
 ->name('usuarios.peliculas');
 
+Route::get('/usuarios/funciones', [IndexController::class, 'funciones'])
+->name('usuarios.funciones');
+
 Route::post('/usuarios', [IndexController::class, 'store'])
 ->name('peliculas.store');
+
+
