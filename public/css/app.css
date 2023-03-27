@@ -27,6 +27,10 @@ body {
     border-radius: 20px;
 }
 
+.data-bs-toggle {
+    margin-right: -250px;
+}
+
 .panel {
     width: 730px;
     height: 538px;

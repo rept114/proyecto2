@@ -26,19 +26,24 @@ body {
     color: #ebeeff;
 }
 
+
 #col1 {
     width: 100px;
     height: 100px;
     background-color: #48569e00;
     color: #ebeeff00;
+    float: left;
+    width: 20%;
 }
 
 #col2 {
     margin-left: 700px;
-    margin-top: -950px;
+    margin-top: -52%;
     width: 10px;
     height: 700px;
     border-radius: 20px;
+    float: left;
+    width: 20%;
 }
 
 #col3 {
@@ -54,13 +59,19 @@ body {
     width: 65%;
     float: left;
     padding-bottom: 20px;
+    text-align: center;
 }
+  
 
 #img2 {
     margin-top: -50px;
-    margin-left: -220px;
+    margin-left: -320px;
     width: 125px;
     height: 200px;
+    object-fit: cover;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #titulomain {
@@ -71,6 +82,7 @@ body {
 #labelp {
     margin-top: 20px!important;
     margin-left: -475px;
+    text-align: left;
 }
 
 #img3 {
@@ -84,6 +96,7 @@ body {
     margin-top: 30px!important;
     margin-left: -15px;
 }
+
 
 #label2p {
     margin-top: 20px!important;

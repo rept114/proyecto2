@@ -36,11 +36,11 @@
       </nav>
       <div class="container">
         <div class="row">
-          <div>
+          <div class="container">
             <div id="coloriginal" class="col">
               @foreach ($peliculas as $pelicula)
               <h3 id="titulomain">{{ $pelicula->titulo }}</h3>
-              <label id="labelp" class="label">{{ $pelicula->año }}</label>
+              <label id="labelp" class="label">Duración: {{ $pelicula->duracion_minutos }} minutos<br>Año: {{ $pelicula->año }}</label>
               <img src="{{ $pelicula->poster }}" id="img2" class="img-thumbnail" alt="...">
               @endforeach
             </div>

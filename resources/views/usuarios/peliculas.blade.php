@@ -38,34 +38,36 @@
     </div>
     <div id="contenedor1" class="container">
         <div class="panel">
+        <form action="{{ route('peliculas.store') }}" method="POST">
+            @csrf
             <div class="row">
                 <div class="col-7">
-                    <label class="form-label"><strong>Titulo:</strong></label>
-                    <input type="text" class="form-control" placeholder="Titanic">
+                    <label class="form-label" for="titulo"><strong>Titulo:</strong></label>
+                    <input type="text" class="form-control" placeholder="Titanic" name="titulo" id="titulo">
                 </div>
             </div>
             <div class="row">
                 <div class="col-7">
-                    <label class="form-label"><strong>Duración en minutos:</strong></label>
-                    <input type="text" class="form-control" placeholder="155">
+                    <label class="form-label" for="duracion_minutos"><strong>Duración en minutos:</strong></label>
+                    <input type="number" class="form-control" placeholder="155" name="duracion_minutos" id="duracion_minutos">
                 </div>
             </div>
             <div class="row">
                 <div class="col-7">
-                    <label class="form-label"><strong>Género:</strong></label>
-                    <select class="form-select">
+                    <label class="form-label" for="genero"><strong>Género:</strong></label>
+                    <select class="form-select" id="genero" name="genero">
                         <option value="" selected disabled>Elige el género</option>
-                        <option value="derecho">Acción</option>
-                        <option value="administracion">Aventura</option>
-                        <option value="multimedia">Terro psicologico</option>
+                        <option value="accion">Acción</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="terror psicologico">Terro psicologico</option>
                         <option value="multimedia">Comedia</option>
                     </select>
                 </div>
             </div>
             <div class="row">
                 <div class="col-7">
-                    <label class="form-label"><strong>Año:</strong></label>
-                    <select class="form-select">
+                    <label class="form-label" for="año"><strong>Año:</strong></label>
+                    <select class="form-select" id="año" name="año">
                         <option value="" selected disabled>Elige el año</option>
                         <option value="1999">1999</option>
                         <option value="2000">2000</option>
@@ -86,8 +88,8 @@
                 </div>
                 <div class="row">
                 <div class="col-7">
-                    <label class="form-label"><strong>Director:</strong></label>
-                    <input type="text" class="form-control" placeholder="Steven Spilber">
+                    <label class="form-label" for="director"><strong>Director:</strong></label>
+                    <input type="text" class="form-control" placeholder="Steven Spilber" id="director" name="director">
                 </div>
             </div>
             </div>
@@ -100,6 +102,7 @@
             </div>
             <div class="linea"></div>
         </div>
+        </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

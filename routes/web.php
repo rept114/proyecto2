@@ -19,6 +19,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/usuarios', [IndexController::class, 'index'])->name('usuarios.index');
+Route::get('/usuarios', [IndexController::class, 'index'])
+->name('usuarios.index');
 
-Route::get('/usuarios/peliculas', [IndexController::class, 'peliculas'])->name('usuarios.peliculas');
+Route::get('/usuarios/peliculas', [IndexController::class, 'peliculas'])
+->name('usuarios.peliculas');
+
+Route::post('/usuarios', [IndexController::class, 'store'])
+->name('peliculas.store');
