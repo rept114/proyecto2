@@ -29,10 +29,10 @@ class IndexController extends Controller
     public function funciones()
     {
         // Obtener los géneros desde la base de datos
-        $funciones = Funciones::all();
+        $peliculas = Peliculas::all();
     
         // Mostrar el formulario para crear una nueva película
-        return view('usuarios.funciones', ['funciones' => $funciones]);
+        return view('usuarios.funciones', ['peliculas' => $peliculas]);
     }
 
     public function store(Request $request)
