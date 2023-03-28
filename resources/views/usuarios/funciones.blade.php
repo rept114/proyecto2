@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuevana7</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/funciones.css') }}">
 </head>
 <body>
 <div class="container text-center">
@@ -38,18 +38,18 @@
     </div>
     <div id="contenedor1" class="container">
         <div class="panel">
-        <form action="{{ route('peliculas.store') }}" method="POST">
+        <form action="{{ route('funciones.store') }}" method="POST">
             @csrf
             <div class="row">
                 <div class="col-7">
-                    <label class="form-label" for="titulo"><strong>Fecha:</strong></label>
-                    <input type="date" class="form-control" placeholder="Titanic" name="titulo" id="titulo">
+                    <label class="form-label" for="fecha"><strong>Fecha:</strong></label>
+                    <input type="date" class="form-control" placeholder="13/02/2023" name="fecha" id="fecha">
                 </div>
             </div>
             <div class="row">
                 <div class="col-7">
-                    <label class="form-label" for="duracion_minutos"><strong>Hora:</strong></label>
-                    <input type="time" class="form-control" placeholder="155" name="duracion_minutos" id="duracion_minutos">
+                    <label class="form-label" for="hora"><strong>Hora:</strong></label>
+                    <input type="time" class="form-control" placeholder="5:00pm" name="hora" id="hora">
                 </div>
             </div>
             <div class="row">
@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="botoncrear">
                     <div class="col-7 text-end">
-                        <button id="botoncrear" type="submit" class="btn btn-primary mt-5">Agregar Pelicula</button>
+                        <button id="botoncrear" type="submit" class="btn btn-primary mt-5">Agregar Función</button>
                     </div>
                 </div>
             </div>
