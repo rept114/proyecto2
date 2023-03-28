@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\FuncionesController;
 
 
 /*
@@ -31,7 +32,9 @@ Route::get('/usuarios/funciones', [IndexController::class, 'funciones'])
 Route::post('/usuarios', [IndexController::class, 'store'])
 ->name('peliculas.store');
 
-Route::post('/usuarios', [IndexController::class, 'store'])
+Route::post('/usuarios', [FuncionesController::class, 'store'])
 ->name('funciones.store');
+
+Route::get('/funciones', [FuncionesController::class, 'funciones']);
 
 

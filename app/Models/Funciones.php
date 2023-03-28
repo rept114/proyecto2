@@ -9,4 +9,8 @@ class Funciones extends Model
 {
     use HasFactory;
     protected $table = 'funciones';
+    public function peliculas()
+    {
+        return $this->belongsToMany(Peliculas::class);
+    }
 }

@@ -62,22 +62,11 @@ class IndexController extends Controller
         // Guardar la película y el género asociado en la tabla de películas
         $pelicula->save();
         $pelicula->generos()->attach($genero->id);
-
-        // Definir la variable $genero
-        $genero = Generos::where('nombre', $request->genero)->first();
     
-        // Crear una nueva instancia de Peliculas y guardar los datos del formulario
-        $funciones = new Funciones;
-        $funciones->fecha = $request->fecha;
-        $funciones->hora = $request->hora;
-    
-        // Guardar la funcion y la pelicula asociada en la tabla de películas
-        $funciones->save();
-        $funciones->peliculas()->attach($peliculas->id);
-    
-        // Redirigir al usuario a la lista de películas
-        return redirect()->route('peliculas.index');
+        // Redirigir al usuario a la lista de usuarios
+        return redirect()->route('usuarios.index');
     }
+    
     
     public function create()
     {
